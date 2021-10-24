@@ -24,6 +24,16 @@ class Hello extends CI_Controller
             'sets2' => $sets2,
         ]);
     }
+
+
+    public function test()
+    {
+        $this->load->view('v_main', [
+            'base_url' => base_url(),
+            'test' => 'qwerty',
+            'body' => 'v_hello'
+        ]);
+    }
 }
 
 /* End of file Hello.php */
