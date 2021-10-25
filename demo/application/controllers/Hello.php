@@ -24,6 +24,12 @@ class Hello extends CI_Controller
             'sets2' => $sets2,
         ]);
     }
+
+    public function get_uri($id = 0)
+    {
+        var_dump($id);
+        $this->load->view('v_show', ['id' => $id]);
+    }
 }
 
 /* End of file Hello.php */
