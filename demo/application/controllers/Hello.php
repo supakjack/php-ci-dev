@@ -30,6 +30,15 @@ class Hello extends CI_Controller
         var_dump($id);
         $this->load->view('v_show', ['id' => $id]);
     }
+
+    public function test()
+    {
+        $this->load->view('v_main', [
+            'base_url' => base_url(),
+            'test' => 'qwerty',
+            'body' => 'v_hello'
+        ]);
+    }
 }
 
 /* End of file Hello.php */
